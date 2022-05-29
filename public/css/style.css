@@ -8,10 +8,32 @@ img {
     max-width: 100%;
 }
 /* Variables */
+:root {
+    --black: #000;
+    --white-50: #fffffff5;
+    --white: #fff;
+}
+/* Body */
 body {
     background: linear-gradient(rgba(95, 114, 189,0.8), rgba(155,35,234,0.7)),url("/public/img/bg.jpg");
     background-size: auto;
     background-position: center;
-    color: #fff;
+    color: var(--white);
     min-height: 100vh;
 }
+/* Main */
+.accordion-item {
+    background-color: var(--white-50) !important;
+}
+.accordion-body:hover {
+    background: linear-gradient(rgba(95, 114, 189,0.8), rgba(155,35,234,0.7));
+}
+.accordion-body > a {
+    color: var(--black); 
+}
+.accordion-body > a:hover {
+    color: var(--white); 
+    font-weight: bold;
+}
+/* Modal accordion */
+
